@@ -12,7 +12,7 @@ export default function ShowBook() {
     useEffect(() =>{
         setLoading(true)
         axios
-        .get(`http://localhost:5555/books/${id}`)
+        .get(`https://book-store-git-main-jishans-projects-80682501.vercel.app/books/${id}`)
         .then((res)=>{
             setBook(res.data)
             // console.log(res);            
