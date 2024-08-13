@@ -6,7 +6,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 5173
 const DBURL = process.env.MongoDBURL
 
 //middle ware parse body
