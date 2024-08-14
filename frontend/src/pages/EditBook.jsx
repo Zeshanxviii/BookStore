@@ -16,7 +16,7 @@ export default function EditBook() {
     useEffect(()=>{
         setLoading(true)
         axios
-        .get(`https://book-store-i9cu1vkp8-jishans-projects-80682501.vercel.app/books/${id}`)
+        .get(`https://book-store-lac-sigma.vercel.app/books/${id}`)
         .then((res) => {
             setAuthor(res.data.author)
             setTitle(res.data.title)
