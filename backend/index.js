@@ -14,7 +14,10 @@ app.use(express.json())
 
 //midlle ware Cors pollicy
 //method 1 for all request
-app.use(cors())
+app.use(cors({
+  origin: 'https://book-store-frontend-g6fvzyqlv-jishans-projects-80682501.vercel.app'
+}));
+
 //method 2 for speacific url
 
 //   app.use(cors({
