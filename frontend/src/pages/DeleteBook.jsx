@@ -12,7 +12,7 @@ export default function DeleteBook() {
     const HandleDelete = () => {
         setLoading(true)
         axios
-        .delete(`/books/${id}`)
+        .delete(`https://book-store-i9cu1vkp8-jishans-projects-80682501.vercel.app/books/${id}`)
         .then(() => {
             setLoading(false)
             navigate('/')
