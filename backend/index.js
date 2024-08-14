@@ -16,11 +16,11 @@ app.use(express.json())
 //method 1 for all request
 // app.use(cors())
 //method 2 for speacific url
-app.use(cors({
-  origin:"https://book-store-practise.vercel.app",
-  method:['GET','POST','PUT','DELETE'],
-  allowedHeaders:['Content-Type']
-}))
+
+  app.use(cors({
+  origin: 'https://book-store-practise.vercel.app'
+}));
+
 
 app.use('/books',booksRoute)
 // app.get("/", (req, res) => {
