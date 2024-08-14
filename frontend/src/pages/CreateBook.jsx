@@ -22,7 +22,7 @@ export default function CreateBook() {
     }
     setLoading(true)
     axios
-    .post('https://book-store-i9cu1vkp8-jishans-projects-80682501.vercel.app/books',data)
+    .post('https://book-store-lac-sigma.vercel.app/books',data)
     .then(()=>{
         setLoading(false)
         navigate('/')
