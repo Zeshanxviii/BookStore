@@ -17,7 +17,7 @@ app.use(express.json())
 // app.use(cors())
 //method 2 for speacific url
 app.use(cors({
-  origin:"https://book-store-practise-g0bc0zfnk-jishans-projects-80682501.vercel.app/",
+  origin:"https://book-store-practise.vercel.app",
   method:['GET','POST','PUT','DELETE'],
   allowedHeaders:['Content-Type']
 }))
