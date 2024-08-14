@@ -11,7 +11,7 @@ export default function HomeBook() {
     const [books , setBooks ] = useState([''])
     const [loading , setLoading ] = useState()
     useEffect(() => {
-        axios.get('https://book-store-git-main-jishans-projects-80682501.vercel.app/books')
+        axios.get('https://book-store-backend1-n669b9srg-jishans-projects-80682501.vercel.app/books')
         .then((res) => {
             setBooks(res.data.data)
             setLoading(false) 
