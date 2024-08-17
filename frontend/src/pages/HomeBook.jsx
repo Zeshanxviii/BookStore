@@ -23,21 +23,23 @@ export default function HomeBook() {
         })
     },[])
   return (
-         <div className='flex justify-center h-screen'>
-            <div className='md:mt-6 md:p-6 border border-gray rounded-2xl shadow-2xl'>
-                <div className='flex justify-between items-center md:w-[600px]'>
-                    <h1 className='ml-6 text-2xl font-bold md:text-3xl md:bg-blue-500 md:font-semibold md:text-white px-4 py-2 rounded-xl my-8'>Book List</h1>
-                    <Link to="/books/create">
-                    <MdOutlineAddBox className='mr-10 text-sky-800 text-4xl' />
-                    </Link>
-                </div>
-                <hr className='md:border border-gray-500 rounded-lg'/>
-                {
-                    loading ? (<ScaleLoader className='text-center' />) : (
-                        <BookTable books={books} />
-                    )
-                }
-            </div>
-        </div>
+        <div className="flex justify-center h-screen">
+  <div className="md:mt-6 md:p-6 border border-gray-300 rounded-2xl shadow-2xl dark:border-gray-700 dark:bg-gray-800">
+    <div className="flex justify-between items-center md:w-[600px]">
+      <h1 className="ml-6 text-2xl font-bold md:text-3xl md:bg-blue-500 md:font-semibold md:text-white px-4 py-2 rounded-xl my-8 dark:bg-blue-600 dark:text-gray-200">
+        Book List
+      </h1>
+      <Link to="/books/create">
+        <MdOutlineAddBox className="mr-10 text-sky-800 text-4xl dark:text-sky-400" />
+      </Link>
+    </div>
+    <hr className="md:border border-gray-500 rounded-lg dark:border-gray-600" />
+    {loading ? (
+      <ScaleLoader className="text-center dark:text-gray-200" />
+    ) : (
+      <BookTable books={books} />
+    )}
+  </div>
+</div>
   )
 }
